@@ -1,16 +1,25 @@
+import sys
 from classes.Console import Console
-from methods import greet
+from methods import greet, reverseEcho, palyndrome
 from classes.Console import Console
 
 
 def main():
-        daniil = input()
-        print(greet(daniil))
+        print(greet(sys.argv[1]))
 
-        while(daniil != "Stop!"):
+        daniil = ""
+        while(True):       
                 daniil = input()
-                #reverseEcho()
-                #likeInput()
+                if(daniil == "Stop!"): break
+
+                if(palyndrome(daniil)):
+                        print(daniil)
+                        print("¡Bonita palabra!")
+                else:
+                        print(reverseEcho(daniil))
+                        
+
+        print("Adios " + sys.argv[1])
 
 
 main()
