@@ -5,16 +5,16 @@ from classes.Console import Console
 
 
 def main():
-    print(greet(sys.argv[1]))
-    readString = None
     daniil = Console
+    print(greet(daniil.name))
+    readString = None
     while(True):
         readString = daniil.readInput(daniil)
         if(readString == "stop"):
             print("Adios " + daniil.name)
             break
         if(readString == "palyndrome"):
-            print(daniil.input + "¡Bonita palabra!")
+            print(daniil.input + "\n¡Bonita palabra!")
         if(readString == "ohce"):
             print(reverseEcho(daniil.input))
 
