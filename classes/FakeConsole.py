@@ -1,1 +1,2 @@
-#Hey
+from methods import palyndrome
+
