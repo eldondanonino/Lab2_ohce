@@ -1,7 +1,9 @@
 import datetime as dt
 
 
-def greet():
-    currHour = dt.datetime.today().hour
+def greet(yourName):
+    # Get hour of the day
+    currentHour = dt.datetime.today().hour
 
-    print(currHour)
+    if(20 <= currentHour | 6 >= currentHour):
+        return "¡Buenas noches" + yourName +" !"
