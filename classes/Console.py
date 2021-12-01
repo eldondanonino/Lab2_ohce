@@ -1,4 +1,4 @@
-from methods import greet, palyndrome
+from methods import palyndrome
 import sys
 
 
