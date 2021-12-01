@@ -7,11 +7,10 @@ class Console:
     input = None
 
     def readInput(self) -> str:
-        self.action = input()
-        if(self.action == "Stop!"):
+        self.input = input()
+        if(self.input == "Stop!"):
             return "stop"
-        if(palyndrome(self.action)):
+        if(palyndrome(self.input)):
             return "palyndrome"
         return "ohce"
 
-#a

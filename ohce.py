@@ -5,21 +5,18 @@ from classes.Console import Console
 
 
 def main():
-        print(greet(sys.argv[1]))
-
-        daniil = ""
-        while(True):       
-                daniil = input()
-                if(daniil == "Stop!"): break
-
-                if(palyndrome(daniil)):
-                        print(daniil)
-                        print("¡Bonita palabra!")
-                else:
-                        print(reverseEcho(daniil))
-                        
-
-        print("Adios " + sys.argv[1])
+    print(greet(sys.argv[1]))
+    readString = None
+    daniil = Console
+    while(True):
+        readString = daniil.readInput(daniil)
+        if(readString == "stop"):
+            print("Adios " + daniil.name)
+            break
+        if(readString == "palyndrome"):
+            print(daniil.input + "¡Bonita palabra!")
+        if(readString == "ohce"):
+            print(reverseEcho(daniil.input))
 
 
 main()
