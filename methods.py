@@ -13,3 +13,11 @@ def greet(yourName):
     if(12 <= currentHour <= 20):
         return "¡Buenas tardes "    + yourName + "!"
 
+
+def reverseEcho(str):
+    return ''.join(reversed(str))
+
+
+def palyndrome(str):
+    if(str == ''.join(reversed(str))): return True
+    return False
