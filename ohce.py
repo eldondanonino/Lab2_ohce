@@ -1,22 +1,21 @@
-import sys
 from classes.Console import Console
-from methods import greet, reverseEcho, palyndrome
+from methods import greet, reverseEcho
 from classes.Console import Console
 
 
 def main():
-    daniil = Console
-    print(greet(daniil.name))
+    console = Console
+    print(greet(console.name))
     readString = None
-    while(True):
-        readString = daniil.readInput(daniil)
-        if(readString == "stop"):
-            print("Adios " + daniil.name)
+    while True:
+        readString = console.readInput(console)
+        if readString == "stop":
+            print("Adios " + console.name)
             break
-        if(readString == "palyndrome"):
-            print(daniil.input + "\n¡Bonita palabra!")
-        if(readString == "ohce"):
-            print(reverseEcho(daniil.input))
+        if readString == "palyndrome":
+            print(console.input + "\n¡Bonita palabra!")
+        if readString == "ohce":
+            print(reverseEcho(console.input))
 
 
 main()
