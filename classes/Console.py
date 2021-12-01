@@ -1,8 +1,15 @@
-from methods import greet
+from methods import greet, palyndrome
+import sys
+
 
 class Console:
-    name = "Bob"
-    def changeName(self):
-        self.name = input()
+    name = sys.argv[1]
+    input = None
 
-    
+    def readInput(self) -> str:
+        self.action = input()
+        if(self.action == "Stop!"):
+            return "stop"
+        if(palyndrome(self.action)):
+            return "palyndrome"
+        return "ohce"
