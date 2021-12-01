@@ -8,9 +8,8 @@ class Console:
 
     def readInput(self) -> str:
         self.input = input()
-        if(self.input == "Stop!"):
+        if self.input == "Stop!":
             return "stop"
-        if(palyndrome(self.input)):
+        if palyndrome(self.input):
             return "palyndrome"
         return "ohce"
-
