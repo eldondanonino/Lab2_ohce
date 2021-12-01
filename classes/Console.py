@@ -13,3 +13,5 @@ class Console:
         if(palyndrome(self.action)):
             return "palyndrome"
         return "ohce"
+
+#a
