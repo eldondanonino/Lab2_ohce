@@ -1,7 +1,7 @@
 from classes.Console import Console
 from methods import greet, reverseEcho
 from classes.Console import Console
-
+import sys
 
 def main():
     console = Console
@@ -16,6 +16,5 @@ def main():
             print(console.input + "\n¡Bonita palabra!")
         if readString == "ohce":
             print(reverseEcho(console.input))
-
 
 main()

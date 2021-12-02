@@ -3,7 +3,11 @@ import sys
 
 
 class Console:
-    name = sys.argv[1]
+    try:
+        name = sys.argv[1]
+    except IndexError:
+        print("Please input a name when calling the script, your name will be set to Bob as default")
+        name = "Bob"
     input = None
 
     def readInput(self) -> str:

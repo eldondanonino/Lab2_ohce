@@ -59,6 +59,11 @@ def test_not_palyndrome():
     expected = False
     assert actual == expected
 
+def test_no_argument(): #how? 
+    actual = 2
+    expected = 1
+    assert actual == expected
+
 #def test_stop_logic(): How to do this test??
  #   actual = reverseEcho("Stop!")
   #  expected = True
